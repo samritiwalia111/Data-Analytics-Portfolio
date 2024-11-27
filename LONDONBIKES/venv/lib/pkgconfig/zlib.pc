@@ -1,0 +1,13 @@
+prefix=/Users/Sam/Desktop/LONDONBIKES/venv
+exec_prefix=/Users/Sam/Desktop/LONDONBIKES/venv
+libdir=/Users/Sam/Desktop/LONDONBIKES/venv/lib
+sharedlibdir=/Users/Sam/Desktop/LONDONBIKES/venv/lib
+includedir=/Users/Sam/Desktop/LONDONBIKES/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
