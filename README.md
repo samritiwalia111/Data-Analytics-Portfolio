@@ -1,37 +1,32 @@
-# London Bike Rides
+# London Bike Rides - Data Analytics Portfolio Project
 
-This project uses bike ride data in London to clean and analyze the data, followed by visualizing the results using Tableau. The project workflow includes data manipulation in Python, data cleaning, and then visualization in Tableau to extract valuable insights.
+This project demonstrates an end-to-end data analytics process for analyzing **London Bike Rides** using **Tableau** and **Python**. The analysis focuses on creating insights through moving averages and heatmaps of bike ride data, leveraging both Python for data cleaning and Tableau for data visualization.
 
 ## Project Structure
 
 The project folder contains the following files:
 
 ### 1. **Data**:
-- `london_bike_final.xlsx`: The Excel file containing the raw bike ride data from London. This file serves as the primary data source for the project.
+- `london-bike-sharing-dataset.zip`: A zip file containing the raw dataset of London bike-sharing information.
+  
+### 2. **Data Processing (Python)**:
+- `london_bikes.ipynb`: A Jupyter Notebook that contains the Python code for data cleaning, preprocessing, and exploratory analysis. This notebook handles tasks like missing data treatment, feature engineering, and merging different data sources.
+- `london_bikes_final.xlsx`: The final cleaned and processed dataset saved in Excel format, ready for use in Tableau for visualization.
+- `london_merged.csv`: A CSV file containing the merged dataset, which combines various features and datasets for deeper analysis.
 
-### 2. **Data Manipulation**:
-- `london.ipynb`: A Jupyter Notebook containing the Python code used to clean and preprocess the raw bike ride data. The code performs data cleaning tasks such as handling missing values, removing outliers, and transforming the data into a format suitable for analysis.
-
-### 3. **Visualizations**:
-- `London Bike Rides - Moving Average and Heatmap.twbx`: A Tableau workbook file that contains the visualizations based on the cleaned data. This workbook includes interactive charts and dashboards designed to provide insights into bike ride patterns across London.
+### 3. **Visualizations (Tableau)**:
+- `London Bike Rides - Moving Average and Heatmap.twbx`: A Tableau workbook that includes interactive visualizations of bike ride patterns. The workbook includes:
+  - **Moving Average**: A time series analysis of bike rides to identify trends and seasonality.
+  - **Heatmap**: A heatmap visualization of bike rides across different locations and times.
 
 ## Requirements
 
-Before running the project, ensure you have the following tools installed:
-
 ### 1. **Python 3.x**:
-You’ll need Python 3.x to run the `data_cleaning.ipynb` file.
+Ensure you are using Python 3.x to run the `london_bikes.ipynb` notebook.
 
-### 2. **Jupyter Notebook**:
-To interact with and execute the `data_cleaning.ipynb` notebook.
-
-### 3. **Tableau**:
-To view and explore the visualizations in the `london_bike_rides.twb` file.
-
-### Python Libraries:
-The `data_cleaning.ipynb` file requires the following Python libraries:
+### 2. **Required Libraries**:
+The Python notebook requires the following libraries to process and clean the data:
 - **pandas** for data manipulation.
 - **zipfile** for extracting zip archives.
 - **kaggle** for downloading datasets directly from Kaggle.
 ```bash
-pip install pandas numpy matplotlib seaborn
